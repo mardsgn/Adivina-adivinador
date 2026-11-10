@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adivina adivinador</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section id="intro"><h1>Adivina adivinador</h1></section>
+
+  <section id="registro" hidden>
+    <h2>¿Quiénes juegan?</h2>
+    <p>De 2 a 5 jugadores</p>
+    <div id="lista"></div>
+    <button id="agregar">+ Agregar jugador</button>
+    <p id="error"></p>
+    <button id="empezar">Empezar</button>
+  </section>
+
+  <section id="juego" hidden>
+    <div id="barra"><div id="relleno"></div></div>
+    <div id="tiempo">05:00</div>
+    <p id="turno"></p>
+    <p id="msg"></p>
+    <input id="n" type="number" inputmode="numeric" min="1" max="100" placeholder="1 - 100">
+    <button id="probar">Probar</button>
+    <p id="intentos"></p>
+  </section>
+
+  <section id="fin" hidden>
+    <h1 id="finTitulo"></h1>
+    <p id="finTexto"></p>
+    <button id="again">Jugar de nuevo</button>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
